@@ -8,7 +8,7 @@ variable "resource_group_name" {
 
 variable "location" {
   type    = string
-  default = "eastus"
+  default = "westindia"
 }
 
 
@@ -33,6 +33,8 @@ variable "subnet_names" {
 
 provider "azurerm" {
   version = "~> 1.0"
+  subscription_id = "xxxxx"
+  tenant_id       = "xxxxx"
 }
 
 #############################################################################
